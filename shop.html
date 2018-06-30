@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barbershop</title>
+</head>
+
+<body>
+  <header class="main-header">
+
+    <nav class="main-header__nav nav">
+      <a class="main-header__logo logo">
+        <img src="../img/logo.png" alt="Barbershop" class="logo__img">
+      </a>
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="info.html" class="nav__link">Информация</a>
+        </li>
+        <li class="nav__item">
+          <a href="news.html" class="nav__link">Новости</a>
+        </li>
+        <li class="nav__item">
+          <a href="price.html" class="nav__link">Прайс-лист</a>
+        </li>
+        <li class="nav__item">
+          <a href="shop.html" class="nav__link">Магазин</a>
+        </li>
+        <li class="nav__item">
+          <a href="contacts.html" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="user-block">
+      <li class="user-block__item">
+        <a href="user.html" class="user-block__link">Вход</a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <h1 class="main-content__title">СРЕДСТВА ДЛЯ УХОДА</h1>
+
+    <section class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+
+        <li class="breadcrumbs__item">
+          <a href="shop.html" class="breadcrumbs__link">Магазин</a>
+        </li>
+
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Средства для ухода</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sort">
+      <h2 class="sort__title visually-hidden">Сортировка товаров</h2>
+
+      <form action="" class="sort__form form-sort">
+        <fieldset class="form-sort__block">
+          <legend class="form-sort__block-title">Производители:</legend>
+          <ul class="form-sort__list">
+            <li class="form-sort__item">
+              <input type="checkbox" id="baxterOfCalifornia" value="Baxter of California" checked>
+              <label for="baxterOfCalifornia">Baxter of California</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="checkbox" id="mrNatty" value="Mr Natty">
+              <label for="mrNatty">Mr Natty</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="checkbox" id="suavecito" value="Suavecito" checked>
+              <label for="suavecito">Suavecito</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="checkbox" id="malinGoetz" value="Malin+Goetz">
+              <label for="malinGoetz">Malin+Goetz</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="checkbox" id="murrays" value="Murray's">
+              <label for="murrays">Murray's</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="checkbox" id="americanCrew" value="American Crew" checked>
+              <label for="americanCrew">American Crew</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form-sort__block">
+          <legend class="form-sort__block-title">Группы товаров:</legend>
+          <ul class="form-sort__list">
+            <li class="form-sort__item">
+              <input type="radio" id="shavingAccessories" name="Group of Products" value="shaving accessories">
+              <label for="shavingAccessories">Бритвенные принадлежности</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="radio" id="careProducts" name="Group of Products" value="Care Products" checked>
+              <label for="careProducts">Средства для ухода</label>
+            </li>
+
+            <li class="form-sort__item">
+              <input type="radio" id="accessories" name="Group of Products" value="Accessories">
+              <label for="accessories">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="form-sort__show">Показать</button>
+      </form>
+    </section>
+
+    <section class="catalog">
+      <h2 class="catalog__title visually-hidden">Каталог товаров</h2>
+
+      <ul class="catalog__products products__list">
+        <li class="products__item product">
+          <img src="" alt="Набор для путешествий «Baxter of California»" class="product__img">
+          <p class="product__type">Набор для путешествий</p>
+          <p>
+            <a href="#" class="product__brand">«Baxter of California»</a>
+          </p>
+          <span class="product__price">2 900</span>
+          <a href="#" class="product__buy">Купить</a>
+        </li>
+
+        <li class="products__item product">
+          <img src="" alt="Увлажняющий кондиционер «Baxter of California»" class="product__img">
+          <p class="product__type">Увлажняющий кондиционер</p>
+          <p>
+            <a href="#" class="product__brand">«Baxter of California»</a>
+          </p>
+          <span class="product__price">750</span>
+          <a href="#" class="product__buy">Купить</a>
+        </li>
+
+        <li class="products__item product">
+          <img src="" alt="Гель для волос «SUAVECITO»" class="product__img">
+          <p class="product__type">Гель для волос</p>
+          <p>
+            <a href="#" class="product__brand">«SUAVECITO»</a>
+          </p>
+          <span class="product__price">290</span>
+          <a href="#" class="product__buy">Купить</a>
+        </li>
+
+        <li class="products__item product">
+          <img src="" alt="Глина для укладки волос «American crew»" class="product__img">
+          <p class="product__type">Глина для укладки волос</p>
+          <p>
+            <a href="#" class="product__brand">«American crew»</a>
+          </p>
+          <span class="product__price">500</span>
+          <a href="#" class="product__buy">Купить</a>
+        </li>
+
+        <li class="products__item product">
+          <img src="" alt="Гель для волос «AMERICAN CREW»" class="product__img">
+          <p class="product__type">Гель для волос</p>
+          <p>
+            <a href="#" class="product__brand">«AMERICAN CREW»</a>
+          </p>
+          <span class="product__price">300</span>
+          <a href="#" class="product__buy">Купить</a>
+        </li>
+
+        <li class="products__item product">
+          <img src="" alt="Набор для бритья «Baxter of California»" class="product__img">
+          <p class="product__type">Набор для бритья</p>
+          <p>
+            <a href="#" class="product__brand">«Baxter of California»</a>
+          </p>
+          <span class="product__price">3900</span>
+          <a href="#" class="product__buy">Купить</a>
+        </li>
+      </ul>
+
+      <ul class="catalog__pagination pagaination__list">
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">1</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">2</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">3</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#" class="pagination__link">4</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <p class="main-footer__contacts">
+      БАРБЕРШОП «БОРОДИНСКИЙ»
+      <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+      <br>
+      <a href="map.html">КАК НАС НАЙТИ?</a>
+      <br> ТЕЛЕФОН:
+      <a href="tel:+7495660266">+7 (495) 666-02-66</a>
+    </p>
+
+    <div class="main-footer__socials socials">
+      <b class="socials__title">Давайте дружить!</b>
+      <ul class="socials__list">
+        <li class="socials__list">
+          <a href="vk.com" class="socials__link">vk</a>
+        </li>
+        <li class="socials__list">
+          <a href="fb.com" class="socials__link">fb</a>
+        </li>
+        <li class="socials__list">
+          <a href="inst.com" class="socials__link">inst</a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="main-footer__copyright copyright">
+      <b class="copyright__title">Разработано:</b>
+      <a href="htmlacademy.ru" class="copyright__link">htmlacademy</a>
+    </p>
+  </footer>
+</body>
+
+</html>
