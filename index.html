@@ -97,8 +97,8 @@
             <img class="gallery-content__img" src="img/content/gallery-img.jpg" alt="Какое-то изображение помещения">
           </li>
         </ul>
-        <span class="gallery-content__navigation gallery-content__navigation--prev">Назад</span>
-        <span class="gallery-content__navigation gallery-content__navigation--next">Вперед</span>
+        <button class="gallery-content__navigation gallery-content__navigation--prev" type="button">Назад</button>
+        <button class="gallery-content__navigation gallery-content__navigation--next" type="button">Вперед</button>
       </figure>
     </section>
 
@@ -124,8 +124,27 @@
 
     <section class="subscribe">
       <h2 class="subscribe__title section__title">Записаться</h2>
-      <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-      <form></form>
+      <p class="subscribe__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+      <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="subscribe__field subscribe-field">
+          <label class="subscribe-field__title" for="subscribe-data">Дата</label>
+          <input class="subscribe-field__input" id="subscribe-data" type="text" name="data" placeholder="08.10.2017">
+        </p>
+        <p class="subscribe__field">
+          <label class="subscribe-field__title" for="subscribe-time">Время</label>
+          <input class="subscribe-field__input" id="subscribe-time" type="text" name="time" placeholder="10:00">
+        </p>
+        <p class="subscribe__field">
+          <label class="subscribe-field__title" for="subscribe-name">Ваше имя</label>
+          <input class="subscribe-field__input" id="subscribe-name" type="text" name="name" placeholder="Борода">
+        </p>
+        <p class="subscribe__field">
+          <label class="subscribe-field__title" for="subscribe-phone">Телефон</label>
+          <input class="subscribe-field__input" id="subscribe-phone" type="tel" name="phone" placeholder="+7 123 548-85-52">
+        </p>
+
+        <button class="subscribe__send" type="submit">Отправить</button>
+      </form>
     </section>
 
   </main>
