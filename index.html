@@ -125,25 +125,25 @@
     <section class="subscribe">
       <h2 class="subscribe__title section__title">Записаться</h2>
       <p class="subscribe__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-      <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="subscribe__field subscribe-field">
-          <label class="subscribe-field__title" for="subscribe-data">Дата</label>
-          <input class="subscribe-field__input" id="subscribe-data" type="text" name="data" placeholder="08.10.2017">
+      <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="subscribe-form__field">
+          <label class="subscribe-form__title" for="subscribe-data">Дата</label>
+          <input class="subscribe-form__input" id="subscribe-data" type="text" name="data" placeholder="08.10.2017">
         </p>
-        <p class="subscribe__field">
-          <label class="subscribe-field__title" for="subscribe-time">Время</label>
-          <input class="subscribe-field__input" id="subscribe-time" type="text" name="time" placeholder="10:00">
+        <p class="subscribe-form__field">
+          <label class="subscribe-form__title" for="subscribe-time">Время</label>
+          <input class="subscribe-form__input" id="subscribe-time" type="text" name="time" placeholder="10:00">
         </p>
-        <p class="subscribe__field">
-          <label class="subscribe-field__title" for="subscribe-name">Ваше имя</label>
-          <input class="subscribe-field__input" id="subscribe-name" type="text" name="name" placeholder="Борода">
+        <p class="subscribe-form__field">
+          <label class="subscribe-form__title" for="subscribe-name">Ваше имя</label>
+          <input class="subscribe-form__input" id="subscribe-name" type="text" name="name" placeholder="Борода">
         </p>
-        <p class="subscribe__field">
-          <label class="subscribe-field__title" for="subscribe-phone">Телефон</label>
-          <input class="subscribe-field__input" id="subscribe-phone" type="tel" name="phone" placeholder="+7 123 548-85-52">
+        <p class="subscribe-form__field">
+          <label class="subscribe-form__title" for="subscribe-phone">Телефон</label>
+          <input class="subscribe-form__input" id="subscribe-phone" type="tel" name="phone" placeholder="+7 123 548-85-52">
         </p>
 
-        <button class="subscribe__send" type="submit">Отправить</button>
+        <button class="subscribe-form__send" type="submit">Отправить</button>
       </form>
     </section>
 
@@ -186,17 +186,17 @@
 
     <form class="modal-login__form login-form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="login-form__field">
-        <label for="login-form-name" class="login-form__title visually-hidden">Логин</label>
-        <input id="login-form-name" class="login-form__input" type="text" name="name" placeholder="Логин">
+        <label for="login-name" class="login-form__title visually-hidden">Логин</label>
+        <input id="login-name" class="login-form__input" type="text" name="name" placeholder="Логин">
       </p>
       <p class="login-form__field">
-        <label for="login-form-password" class="login-form__title visually-hidden">Пароль</label>
-        <input id="login-form-password" class="login-form__input" type="password" name="password" placeholder="Пароль">
+        <label for="login-password" class="login-form__title visually-hidden">Пароль</label>
+        <input id="login-password" class="login-form__input" type="password" name="password" placeholder="Пароль">
       </p>
       <p class="login-form__field">
-        <input id="login-form-remember" class="login-form__input visually-hidden" type="checkbox" name="remember" checked>
+        <input id="login-remember" class="login-form__input visually-hidden" type="checkbox" name="remember" checked>
         <span class="login-form__custom-checkbox"></span>
-        <label for="login-form-remember" class="login-form__title">Запомнить меня</label>
+        <label for="login-remember" class="login-form__title">Запомнить меня</label>
 
         <a href="#" class="login-form__link">Я забыл пароль!</a>
       </p>
