@@ -64,38 +64,38 @@
     <section class="sort">
       <h2 class="sort__title visually-hidden">Сортировка товаров</h2>
 
-      <form action="" class="sort__form form-sort">
+      <form class="sort__form form-sort" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form-sort__block">
           <legend class="form-sort__block-title">Производители:</legend>
           <ul class="form-sort__list">
             <li class="form-sort__item">
-              <input type="checkbox" id="baxterOfCalifornia" value="Baxter of California" checked>
-              <label for="baxterOfCalifornia">Baxter of California</label>
+              <input id="baxter-of-alifornia" class="visually-hidden" type="checkbox" value="Baxter of California" checked>
+              <label for="baxter-of-alifornia">Baxter of California</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="checkbox" id="mrNatty" value="Mr Natty">
-              <label for="mrNatty">Mr Natty</label>
+              <input id="mr-natty" class="visually-hidden" type="checkbox" value="Mr Natty">
+              <label for="mr-natty">Mr Natty</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="checkbox" id="suavecito" value="Suavecito" checked>
+              <input id="suavecito" class="visually-hidden" type="checkbox" value="Suavecito" checked>
               <label for="suavecito">Suavecito</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="checkbox" id="malinGoetz" value="Malin+Goetz">
-              <label for="malinGoetz">Malin+Goetz</label>
+              <input id="malin-goetz" class="visually-hidden" type="checkbox" value="Malin+Goetz">
+              <label for="malin-goetz">Malin+Goetz</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="checkbox" id="murrays" value="Murray's">
+              <input id="murrays" class="visually-hidden" type="checkbox" value="Murray's">
               <label for="murrays">Murray's</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="checkbox" id="americanCrew" value="American Crew" checked>
-              <label for="americanCrew">American Crew</label>
+              <input id="american-crew" class="visually-hidden" type="checkbox" value="American Crew" checked>
+              <label for="american-crew">American Crew</label>
             </li>
           </ul>
         </fieldset>
@@ -104,22 +104,22 @@
           <legend class="form-sort__block-title">Группы товаров:</legend>
           <ul class="form-sort__list">
             <li class="form-sort__item">
-              <input type="radio" id="shavingAccessories" name="Group of Products" value="shaving accessories">
-              <label for="shavingAccessories">Бритвенные принадлежности</label>
+              <input id="shaving-accessories" class="visually-hidden" type="radio" name="Group of Products" value="shaving accessories">
+              <label for="shaving-accessories">Бритвенные принадлежности</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="radio" id="careProducts" name="Group of Products" value="Care Products" checked>
-              <label for="careProducts">Средства для ухода</label>
+              <input id="care-products" class="visually-hidden" type="radio" name="Group of Products" value="Care Products" checked>
+              <label for="care-products">Средства для ухода</label>
             </li>
 
             <li class="form-sort__item">
-              <input type="radio" id="accessories" name="Group of Products" value="Accessories">
+              <input id="accessories" class="visually-hidden" type="radio" name="Group of Products" value="Accessories">
               <label for="accessories">Аксессуары</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="form-sort__show">Показать</button>
+        <button type="submit" class="form-sort__send">Показать</button>
       </form>
     </section>
 
@@ -128,35 +128,34 @@
 
       <ul class="catalog__products products__list">
         <li class="products__item product">
-          <h3 class="product__title">
-            <a href="#" class="product__link">
+          <a href="#" class="product__link">
+            <h3 class="product__title">
               <span class="product__type">Набор для путешествий</span>
               <span class="product__brand">«Baxter of California»</span>
-            </a>
-          </h3>
+            </h3>
 
-          <div class="product__img">
-            <img src="img/content/product-1.jpg" alt="Набор для путешествий «Baxter of California»">
-          </div>
+            <p class="product__img">
+              <img src="img/content/product-1.jpg" alt="Набор для путешествий «Baxter of California»">
+            </p>
+          </a>
 
           <p class="product__cart">
             <span class="product__price">2 900</span>
             <a href="#" class="product__buy">Купить</a>
           </p>
-
         </li>
 
         <li class="products__item product">
-          <h3 class="product__title">
-            <a href="#" class="product__link">
+          <a href="#" class="product__link">
+            <h3 class="product__title">
               <span class="product__type">Увлажняющий кондиционер</span>
               <span class="product__brand">«Baxter of California»</span>
-            </a>
-          </h3>
+            </h3>
 
-          <div class="product__img">
-            <img src="img/content/product-2.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
-          </div>
+            <p class="product__img">
+              <img src="img/content/product-2.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
+            </p>
+          </a>
 
           <p class="product__cart">
             <span class="product__price">750</span>
@@ -166,16 +165,16 @@
         </li>
 
         <li class="products__item product">
-          <h3 class="product__title">
-            <a href="#" class="product__link">
+          <a href="#" class="product__link">
+            <h3 class="product__title">
               <span class="product__type">Гель для волос</span>
               <span class="product__brand">«SUAVECITO»</span>
-            </a>
-          </h3>
+            </h3>
 
-          <div class="product__img">
-            <img src="img/content/product-3.jpg" alt="Гель для волос «SUAVECITO»">
-          </div>
+            <p class="product__img">
+              <img src="img/content/product-3.jpg" alt="Гель для волос «SUAVECITO»">
+            </p>
+          </a>
 
           <p class="product__cart">
             <span class="product__price">290</span>
@@ -185,16 +184,16 @@
         </li>
 
         <li class="products__item product">
-          <h3 class="product__title">
-            <a href="#" class="product__link">
+          <a href="#" class="product__link">
+            <h3 class="product__title">
               <span class="product__type">Глина для укладки волос</span>
               <span class="product__brand">«American crew»</span>
-            </a>
-          </h3>
+            </h3>
 
-          <div class="product__img">
-            <img src="img/content/product-4.jpg" alt="Глина для укладки волос «American crew»">
-          </div>
+            <p class="product__img">
+              <img src="img/content/product-4.jpg" alt="Глина для укладки волос «American crew»">
+            </p>
+          </a>
 
           <p class="product__cart">
             <span class="product__price">500</span>
@@ -204,16 +203,16 @@
         </li>
 
         <li class="products__item product">
-          <h3 class="product__title">
-            <a href="#" class="product__link">
+          <a href="#" class="product__link">
+            <h3 class="product__title">
               <span class="product__type">Гель для волос</span>
               <span class="product__brand">«AMERICAN CREW»</span>
-            </a>
-          </h3>
+            </h3>
 
-          <div class="product__img">
-            <img src="img/content/product-5.jpg" alt="Гель для волос «AMERICAN CREW»">
-          </div>
+            <p class="product__img">
+              <img src="img/content/product-5.jpg" alt="Гель для волос «AMERICAN CREW»">
+            </p>
+          </a>
 
           <p class="product__cart">
             <span class="product__price">300</span>
@@ -223,17 +222,17 @@
         </li>
 
         <li class="products__item product">
-          <h3 class="product__title">
-            <a href="#" class="product__link">
+          <a href="#" class="product__link">
+            <h3 class="product__title">
               <span class="product__type">Набор для путешествий</span>
               <span class="product__brand">«Baxter of California»</span>
-            </a>
-          </h3>
+            </h3>
 
-          <div class="product__img">
-            <img src="img/content/product-6.jpg" alt="Набор для бритья «Baxter of California»">
-          </div>
-          
+            <p class="product__img">
+              <img src="img/content/product-6.jpg" alt="Набор для бритья «Baxter of California»">
+            </p>
+          </a>
+
           <p class="product__cart">
             <span class="product__price">3900</span>
             <a href="#" class="product__buy">Купить</a>
