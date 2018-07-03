@@ -179,6 +179,35 @@
       <a href="htmlacademy.ru" class="copyright__link">htmlacademy</a>
     </p>
   </footer>
+
+  <section class="modal modal-login">
+    <h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+    <p class="modal-login__text">Введите пожалуйста свой логин и пароль</p>
+
+    <form class="modal-login__form login-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="login-form__field">
+        <label for="login-form-name" class="login-form__title visually-hidden">Логин</label>
+        <input id="login-form-name" class="login-form__input" type="text" name="name" placeholder="Логин">
+      </p>
+      <p class="login-form__field">
+        <label for="login-form-password" class="login-form__title visually-hidden">Пароль</label>
+        <input id="login-form-password" class="login-form__input" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-form__field">
+        <input id="login-form-remember" class="login-form__input visually-hidden" type="checkbox" name="remember" checked>
+        <span class="login-form__custom-checkbox"></span>
+        <label for="login-form-remember" class="login-form__title">Запомнить меня</label>
+
+        <a href="#" class="login-form__link">Я забыл пароль!</a>
+      </p>
+
+      <button class="login-form__send" type="submit">Войти</button>
+    </form>
+
+    <button class="modal-login__close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal"></section>
 </body>
 
 </html>
