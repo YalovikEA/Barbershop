@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000 url(../img/general/index-bg.jpg) top center no-repeat;
+}
+
+.inner-page {
+  color: #000000;
+  background: #d7d5d2 url(../img/general/index-item-bg.jpg) repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  opacity: 1;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #663d15;
+}
+
+.main-header__nav {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.main-header__nav a {
+  color: #ffffff;
+}
+
+.main-header__nav a:hover,
+.main-header__nav a:focus {
+  background-color: #242424;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.feature__title,
+.section__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.block__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.index-block {
+  color: #000000;
+  background: #d7d5d2 url(../img/general/index-item-bg.jpg) 0 0 repeat;
+}
+
+.item-news__date {
+  text-transform: none;
+}
+
+.contacts__text a {
+  color: #000000;
+}
+
+.subscribe-form__input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.subscribe-form__input:focus{
+  border-color: #663d15;
+}
+
+.main-footer {
+  color: #ffffff;
+  background: #212121 url(../img/general/footer-bg.jpg) 0 0 repeat;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer__contacts-find {
+  text-decoration: underline;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-login {
+  color: #000000;
+  background: #d7d5d2 url(../img/general/index-item-bg.jpg) 0 0 repeat;
+}
+
+.login-form__input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.login-form__input:focus {
+  border-color: #663d15;
+}
+
+.login-form__input:hover ~ .login-form__title,
+.login-form__input:focus ~ .login-form__title {
+  color: #663d15;
+}
+
+.login-form__link {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.breadcrumbs__link {
+  color: #000000;
+}
+
+.breadcrumbs__link-current {
+  color: #aba9a7;
+}
+
+.product__article {
+  color: #aeaeae;
+}
+
+.product__price {
+  background-color: #e5e5e5;
+}
+
+.includes__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price__table {
+  border-collapse: collapse;
+}
+
+.price__table tr,
+.price__table td {
+  border: 2px solid #000000;
+}
+
+.form-sort__item label {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-sort__item input:hover + label,
+.form-sort__item input:focus + label {
+  color: #663d15;
+}
+
+.form-sort__item input:disabled + label {
+ color: #aeaeae;
+}
+
+.product__link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.product__type {
+  text-transform: none;
+}
+
+.pagination__link--current {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination__link--current:hover,
+.pagination__link--current:focus,
+.pagination__link--current:active {
+  color: #ffffff;
+}
