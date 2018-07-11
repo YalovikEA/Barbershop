@@ -637,16 +637,6 @@ input[type="radio"].visually-hidden {
   border-color: #663d15;
 }
 
-.custom-checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000000;
-  cursor: pointer;
-}
-
 .login-form__title:hover .custom-checkbox,
 .login-form__input:focus + .custom-checkbox {
   border-color: #663d15;
@@ -662,16 +652,6 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 2px;
   background-color: #000000;
-}
-
-.custom-checkbox::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg)
-}
-
-.custom-checkbox::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg)
 }
 
 .login-form__input--name {
@@ -959,8 +939,61 @@ input[type="radio"].visually-hidden {
 }
 
 .form-sort__item {
+  position: relative;
   margin-bottom: 17px;
   padding-left: 45px;
+}
+
+.custom-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
+.custom-checkbox::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg)
+}
+
+.custom-checkbox::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg)
+}
+
+.form-sort__checkbox:checked + label .custom-checkbox::before,
+.form-sort__checkbox:checked + label .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.form-sort__radio:checked + label .custom-radio::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .form-sort__item label {
@@ -968,9 +1001,28 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.form-sort__item input:hover + label,
-.form-sort__item input:focus + label {
+.form-sort__item label:hover,
+.form-sort__checkbox:focus + label,
+.form-sort__radio:focus + label {
   color: #663d15;
+}
+
+.form-sort__item label:hover .custom-checkbox,
+.form-sort__item label:hover .custom-radio,
+.form-sort__checkbox:focus + label .custom-checkbox,
+.form-sort__radio:focus + label .custom-radio {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form-sort__item label:hover .custom-radio::before,
+.form-sort__radio:focus + label .custom-radio::before,
+.form-sort__checkbox:checked + label:hover .custom-checkbox::before,
+.form-sort__checkbox:checked + label:hover .custom-checkbox::after,
+.form-sort__checkbox:focus + label .custom-checkbox::before,
+.form-sort__checkbox:focus + label .custom-checkbox::after {
+  background-color: #663d15;
 }
 
 .form-sort__item input:disabled + label {
