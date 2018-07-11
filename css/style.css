@@ -1,14 +1,27 @@
+@-webkit-keyframes bounce {
+  0%    { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
+  70%   { -webkit-transform: translateY(30px); transform: translateY(30px);    }
+  90%   { -webkit-transform: translateY(-15px); transform: translateY(-15px);   }
+  100%  { -webkit-transform: translateY(0); transform: translateY(0);       }
+}
+
 @keyframes bounce {
-  0%    { transform: translateY(-2000px); }
-  70%   { transform: translateY(30px);    }
-  90%   { transform: translateY(-15px);   }
-  100%  { transform: translateY(0);       }
+  0%    { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
+  70%   { -webkit-transform: translateY(30px); transform: translateY(30px);    }
+  90%   { -webkit-transform: translateY(-15px); transform: translateY(-15px);   }
+  100%  { -webkit-transform: translateY(0); transform: translateY(0);       }
+}
+
+@-webkit-keyframes shake {
+  0%, 100%{ -webkit-transform: translateX(0); transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(10px); transform: translateX(10px);}
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(-10px); transform: translateX(-10px);}
 }
 
 @keyframes shake {
-  0%, 100%{ transform: translateX(0);}
-  10%, 30%, 50%, 70%, 90% { transform: translateX(10px);}
-  20%, 40%, 60%, 80% { transform: translateX(-10px);}
+  0%, 100%{ -webkit-transform: translateX(0); transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(10px); transform: translateX(10px);}
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(-10px); transform: translateX(-10px);}
 }
 
 *, *::before,*::after {
@@ -249,7 +262,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -275,7 +289,8 @@ input[type="radio"].visually-hidden {
   height: 20px;
   background-color: #ffffff;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .feature__text {
@@ -535,13 +550,17 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 1s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .modal-error {
-  animation-name: shake;
-  animation-duration: 1s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .modal__close {
@@ -569,12 +588,14 @@ input[type="radio"].visually-hidden {
 
 .modal__close::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .modal__close::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 
 /* MODAL-LOGIN */
@@ -784,7 +805,8 @@ input[type="radio"].visually-hidden {
   height: 8px;
   background-color: #000000;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .breadcrumbs__item:last-child::after {
@@ -909,7 +931,8 @@ input[type="radio"].visually-hidden {
   height: 8px;
   background-color: #000000;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 /* CATALOG */
@@ -967,12 +990,14 @@ input[type="radio"].visually-hidden {
 
 .custom-checkbox::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg)
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg)
 }
 
 .custom-checkbox::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg)
+          -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg)
 }
 
 .form-sort__checkbox:checked + label .custom-checkbox::before,
@@ -1203,7 +1228,8 @@ input[type="radio"].visually-hidden {
   height: 8px;
   background-color: #000000;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
 }
 
 .about-us {
