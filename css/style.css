@@ -1,3 +1,16 @@
+@keyframes bounce {
+  0%    { transform: translateY(-2000px); }
+  70%   { transform: translateY(30px);    }
+  90%   { transform: translateY(-15px);   }
+  100%  { transform: translateY(0);       }
+}
+
+@keyframes shake {
+  0%, 100%{ transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { transform: translateX(10px);}
+  20%, 40%, 60%, 80% { transform: translateX(-10px);}
+}
+
 *, *::before,*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -216,7 +229,7 @@ input[type="radio"].visually-hidden {
   left: 20px;
   width: 16px;
   height: 16px;
-  background: url(/img/svg/login.svg) 0 0 no-repeat;
+  background: url(../img/svg/login.svg) 0 0 no-repeat;
   opacity: 0.3;
 }
 
@@ -513,10 +526,22 @@ input[type="radio"].visually-hidden {
 /* MODAL */
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 2;
   color: #000000;
   background: #d7d5d2 url(../img/general/index-item-bg.jpg) 0 0 repeat;
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 1s;
 }
 
 .modal__close {
@@ -555,11 +580,9 @@ input[type="radio"].visually-hidden {
 /* MODAL-LOGIN */
 
 .modal-login {
-  display: none;
-  top: 50%;
+  top: 150px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-left: -230px;
   width: 460px;
   padding: 50px 80px;
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -652,11 +675,11 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form__input--name {
-  background: url(/img/svg/user.svg) 270px center no-repeat;
+  background: url(../img/svg/user.svg) 270px center no-repeat;
 }
 
 .login-form__input--password {
-  background: url(/img/svg/password.svg) 270px center no-repeat;
+  background: url(../img/svg/password.svg) 270px center no-repeat;
 }
 
 .login-form__link {
@@ -676,11 +699,9 @@ input[type="radio"].visually-hidden {
 /* MODAL-MAP */
 
 .modal-map {
-  display: none;
-  top: 50%;
+  top: 150px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-left: -360px;
   width: 780px;
   height: 574px;
   border: 7px solid #ffffff;
@@ -703,10 +724,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.modal-show {
-  display: block;
 }
 
 /* INNER-PAGES */
