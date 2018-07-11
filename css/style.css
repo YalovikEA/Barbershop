@@ -705,6 +705,10 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-show {
+  display: block;
+}
+
 /* INNER-PAGES */
 
 .inner-page .main-header {
