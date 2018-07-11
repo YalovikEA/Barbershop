@@ -170,7 +170,36 @@
       </p>
     </div>
   </footer>
-  
+
+  <section class="modal modal-login">
+    <h2 class="modal-login__title section__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+    <p class="modal-login__text">Введите пожалуйста свой логин и пароль</p>
+
+    <form class="modal-login__form login-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="login-form__field">
+        <label for="login-name" class="login-form__title visually-hidden">Логин</label>
+        <input id="login-name" class="login-form__input login-form__input--name" type="text" name="name" placeholder="Логин">
+      </p>
+      <p class="login-form__field">
+        <label for="login-password" class="login-form__title visually-hidden">Пароль</label>
+        <input id="login-password" class="login-form__input login-form__input--password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-form__field login-form__field--remember">
+        <label for="login-remember" class="login-form__title">
+          <input id="login-remember" class="login-form__input visually-hidden" type="checkbox" name="remember" checked>
+          <span class="login-form__custom-checkbox custom-checkbox"></span>
+          Запомнить меня
+        </label>
+
+        <a href="#" class="login-form__link">Я забыл пароль!</a>
+      </p>
+
+      <button class="login-form__send btn" type="submit">Войти</button>
+    </form>
+
+    <button class="modal-login__close modal__close" type="button">Закрыть</button>
+  </section>
+
   <script src="js/login.js"></script>
 </body>
 

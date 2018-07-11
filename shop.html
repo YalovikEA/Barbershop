@@ -76,33 +76,45 @@
             <legend class="form-sort__block-title block__title">Производители:</legend>
             <ul class="form-sort__list">
               <li class="form-sort__item">
-                <input id="baxter-of-alifornia" class="visually-hidden" type="checkbox" value="Baxter of California" checked>
-                <label for="baxter-of-alifornia">Baxter of California</label>
+                <input id="baxter-of-alifornia" class="form-sort__checkbox visually-hidden" type="checkbox" name="Baxter of California">
+                <label for="baxter-of-alifornia" checked>
+                  <span class="custom-checkbox"></span>
+                  Baxter of California</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="mr-natty" class="visually-hidden" type="checkbox" value="Mr Natty">
-                <label for="mr-natty">Mr Natty</label>
+                <input id="mr-natty" class="form-sort__checkbox visually-hidden" type="checkbox" name="Mr Natty">
+                <label for="mr-natty">
+                  <span class="custom-checkbox"></span>
+                  Mr Natty</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="suavecito" class="visually-hidden" type="checkbox" value="Suavecito" checked>
-                <label for="suavecito">Suavecito</label>
+                <input id="suavecito" class="form-sort__checkbox visually-hidden" type="checkbox" name="Suavecito" checked>
+                <label for="suavecito">
+                  <span class="custom-checkbox"></span>
+                  Suavecito</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="malin-goetz" class="visually-hidden" type="checkbox" value="Malin+Goetz">
-                <label for="malin-goetz">Malin+Goetz</label>
+                <input id="malin-goetz" class="form-sort__checkbox visually-hidden" type="checkbox" name="Malin+Goetz">
+                <label for="malin-goetz">
+                  <span class="custom-checkbox"></span>
+                  Malin+Goetz</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="murrays" class="visually-hidden" type="checkbox" value="Murray's">
-                <label for="murrays">Murray's</label>
+                <input id="murrays" class="form-sort__checkbox visually-hidden" type="checkbox" name="Murray's">
+                <label for="murrays">
+                  <span class="custom-checkbox"></span>
+                  Murray's</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="american-crew" class="visually-hidden" type="checkbox" value="American Crew" checked>
-                <label for="american-crew">American Crew</label>
+                <input id="american-crew" class="form-sort__checkbox visually-hidden" type="checkbox" name="American Crew" checked>
+                <label for="american-crew">
+                  <span class="custom-checkbox"></span>
+                  American Crew</label>
               </li>
             </ul>
           </fieldset>
@@ -111,18 +123,25 @@
             <legend class="form-sort__block-title block__title">Группы товаров:</legend>
             <ul class="form-sort__list">
               <li class="form-sort__item">
-                <input id="shaving-accessories" class="visually-hidden" type="radio" name="Group of Products" value="shaving accessories">
-                <label for="shaving-accessories">Бритвенные принадлежности</label>
+                <input id="shaving-accessories" class="form-sort__radio visually-hidden" type="radio" name="Group of Products" value="shaving accessories">
+                <label for="shaving-accessories">
+                  <span class="custom-radio"></span>
+                  Бритвенные принадлежности</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="care-products" class="visually-hidden" type="radio" name="Group of Products" value="Care Products" checked>
-                <label for="care-products">Средства для ухода</label>
+                <input id="care-products" class="form-sort__radio visually-hidden" type="radio" name="Group of Products" value="Care Products"
+                  checked>
+                <label for="care-products">
+                  <span class="custom-radio"></span>
+                  Средства для ухода</label>
               </li>
 
               <li class="form-sort__item">
-                <input id="accessories" class="visually-hidden" type="radio" name="Group of Products" value="Accessories">
-                <label for="accessories">Аксессуары</label>
+                <input id="accessories" class="form-sort__radio visually-hidden" type="radio" name="Group of Products" value="Accessories">
+                <label for="accessories">
+                  <span class="custom-radio"></span>
+                  Аксессуары</label>
               </li>
             </ul>
           </fieldset>
@@ -317,7 +336,36 @@
       </p>
     </div>
   </footer>
-  
+
+  <section class="modal modal-login">
+    <h2 class="modal-login__title section__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+    <p class="modal-login__text">Введите пожалуйста свой логин и пароль</p>
+
+    <form class="modal-login__form login-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="login-form__field">
+        <label for="login-name" class="login-form__title visually-hidden">Логин</label>
+        <input id="login-name" class="login-form__input login-form__input--name" type="text" name="name" placeholder="Логин">
+      </p>
+      <p class="login-form__field">
+        <label for="login-password" class="login-form__title visually-hidden">Пароль</label>
+        <input id="login-password" class="login-form__input login-form__input--password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-form__field login-form__field--remember">
+        <label for="login-remember" class="login-form__title">
+          <input id="login-remember" class="login-form__input visually-hidden" type="checkbox" name="remember" checked>
+          <span class="login-form__custom-checkbox custom-checkbox"></span>
+          Запомнить меня
+        </label>
+
+        <a href="#" class="login-form__link">Я забыл пароль!</a>
+      </p>
+
+      <button class="login-form__send btn" type="submit">Войти</button>
+    </form>
+
+    <button class="modal-login__close modal__close" type="button">Закрыть</button>
+  </section>
+
   <script src="js/login.js"></script>
 </body>
 
