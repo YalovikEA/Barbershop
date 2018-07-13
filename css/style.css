@@ -723,7 +723,7 @@ input[type="radio"].visually-hidden {
 
 /* MODAL-OVERLAY */
 
-.modal::before {
+.modal-overlay {
   display: none;
   position: fixed;
   z-index: 1;
@@ -731,7 +731,11 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay--show {
+  display: block;
 }
 
 /* INNER-PAGES */

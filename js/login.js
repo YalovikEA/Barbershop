@@ -5,6 +5,7 @@ var form = document.querySelector('.login-form');
 var named = document.getElementById('login-name');
 var password = document.getElementById('login-password');
 var storage = localStorage.getItem('name');
+var modalOverlay = document.querySelector('.modal-overlay');
 
 login.addEventListener('click', showLogin);
 form.addEventListener('submit', submitForm);
@@ -19,6 +20,7 @@ function showLogin(EO) {
     EO.returnValue = false;
 
   modalLogin.classList.add('modal-show');  
+  modalOverlay.classList.add('modal-overlay--show')
 
   if (storage) {
     named.value = storage;
@@ -41,7 +43,8 @@ function submitForm(EO) {
 
 function closeLogin(EO) {
   EO.preventDefault();
-  modalLogin.classList.remove('modal-show');
+  modalLogin.classList.remove('modal-show');  
+  modalOverlay.classList.remove('modal-overlay--show');
   modalLogin.classList.remove('modal-error');
   login.focus();
 }
@@ -52,6 +55,7 @@ function closeLoginEscape(EO) {
     if(modalLogin.classList.contains('modal-show')) {
       EO.preventDefault();
       modalLogin.classList.remove('modal-show');
+      modalOverlay.classList.remove('modal-overlay--show');
       modalLogin.classList.remove('modal-error');
       login.focus();
     }
