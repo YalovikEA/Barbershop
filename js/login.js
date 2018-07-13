@@ -13,7 +13,11 @@ window.addEventListener('keydown', closeLoginEscape);
 
 
 function showLogin(EO) {
-  EO.preventDefault();
+  if(EO.preventDefault) 
+    EO.preventDefault(); 
+  else 
+    EO.returnValue = false;
+
   modalLogin.classList.add('modal-show');  
 
   if (storage) {
@@ -39,6 +43,7 @@ function closeLogin(EO) {
   EO.preventDefault();
   modalLogin.classList.remove('modal-show');
   modalLogin.classList.remove('modal-error');
+  login.focus();
 }
 
 function closeLoginEscape(EO) {
@@ -48,6 +53,7 @@ function closeLoginEscape(EO) {
       EO.preventDefault();
       modalLogin.classList.remove('modal-show');
       modalLogin.classList.remove('modal-error');
+      login.focus();
     }
   }
 }

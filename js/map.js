@@ -14,6 +14,7 @@ function showMap(EO) {
 function closeMap(EO) {
   EO.preventDefault();
   modalMap.classList.remove('modal-show');
+  map.focus();
 }
 
 function closeMapEscape(EO) {
@@ -22,6 +23,7 @@ function closeMapEscape(EO) {
     if(modalMap.classList.contains('modal-show')) {
       EO.preventDefault();
       modalMap.classList.remove('modal-show');
+      map.focus();
     }
   }
 }
