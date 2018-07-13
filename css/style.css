@@ -47,6 +47,10 @@ body {
   background: #000000 url(../img/general/index-bg.jpg) top center no-repeat;
 }
 
+main {
+  display: block;
+}
+
 .inner-page {
   color: #000000;
   background: #d7d5d2 url(../img/general/index-item-bg.jpg) repeat;
